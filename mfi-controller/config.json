@@ -7,7 +7,6 @@
   "webui": "https://[HOST]:[PORT:6443]",
   "startup": "system",
   "boot": "auto",
-  "host_network": true,
   "ports": {
     "6443/tcp": 6443,
     "6080/tcp": 6080
