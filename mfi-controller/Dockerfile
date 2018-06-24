@@ -9,7 +9,7 @@ RUN chmod a+x /run.sh
 
 ENV MFI_VERSION=2.1.11
 
-RUN apk add --no-cache openjdk7-jre
+RUN apk add --no-cache openjdk7-jre mongodb unzip
 
 ADD https://www.ubnt.com/downloads/mfi/$MFI_VERSION/mFi.unix.zip /
 
