@@ -1,5 +1,0 @@
-{
-  "build_from": {
-    "armhf": "arm32v6/alpine"
-  }
-}
