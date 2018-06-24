@@ -9,7 +9,7 @@
   "boot": "auto",
   "ports": {
     "6443/tcp": 6443,
-    "6080/tcp": 6080,
+    "6080/tcp": 6080
    },
   "legacy": true,
   "map": ["share:rw"],
