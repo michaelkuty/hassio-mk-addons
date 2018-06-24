@@ -1,11 +1,9 @@
-FROM arm32v7/debian
+FROM mvertes/alpine-mongo
 
 ENV MFI_VERSION=2.1.11
 
-RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf\
-    && apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive \
-    apt-get install -y -q --no-install-recommends mongodb-server unzip openjdk-7-jre
+RUN apk --update add openjdk7-jre
+RUN apk --update add unzip
 
 ADD https://www.ubnt.com/downloads/mfi/$MFI_VERSION/mFi.unix.zip /
 
