@@ -4,7 +4,7 @@
   "slug": "mfi-controller",
   "description": "Ubiquiti mFi Controller",
   "url": "https://hub.docker.com/r/fflo/mfi-controller/",
-  "webui": "https://[HOST]:[PORT:6843]",
+  "webui": "https://[HOST]:[PORT:6443]",
   "startup": "system",
   "boot": "auto",
   "ports": {
