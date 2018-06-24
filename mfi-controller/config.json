@@ -8,9 +8,8 @@
   "startup": "system",
   "boot": "auto",
   "ports": {
-    "6843/tcp": 6843,
+    "6443/tcp": 6443,
     "6080/tcp": 6080,
-    "3478/udp": 3478
    },
   "legacy": true,
   "map": ["share:rw"],
