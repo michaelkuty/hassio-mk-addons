@@ -1,6 +1,6 @@
 {
   "name": "Ubiqiti Mfi Controller",
-  "version": "1.0",
+  "version": "latest",
   "slug": "mfi-controller",
   "description": "Ubiquiti mFi Controller",
   "url": "https://hub.docker.com/r/darco/mfi-controller/",
