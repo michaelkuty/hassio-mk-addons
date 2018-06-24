@@ -1,10 +1,15 @@
-FROM java:7-jre
+ARG BUILD_FROM
+FROM $BUILD_FROM
+
+ENV LANG C.UTF-8
+
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
 
 ENV MFI_VERSION=2.1.11
 
-RUN apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive \
-        apt-get install -y -q --no-install-recommends mongodb-server unzip
+RUN apk add --no-cache openjdk7-jre-base mongodb-server unzip
 
 ADD https://www.ubnt.com/downloads/mfi/$MFI_VERSION/mFi.unix.zip /
 
@@ -19,4 +24,4 @@ VOLUME ["/mFi/data"]
 
 WORKDIR /mFi
 
-CMD ["java", "-jar", "lib/ace.jar", "start"]
+CMD [ "/run.sh" ]
