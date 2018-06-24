@@ -10,6 +10,8 @@ RUN chmod a+x /run.sh
 ENV MFI_VERSION=2.1.11
 
 RUN apk add --no-cache openjdk7-jre
+RUN echo 'http://dl-3.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositories
+RUN apk upgrade --update
 RUN apk add --no-cache mongodb
 RUN apk add --no-cache unzip
 
