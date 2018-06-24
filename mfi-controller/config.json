@@ -1,0 +1,22 @@
+{
+  "name": "Ubiqiti Mfi Controller",
+  "version": "1.0",
+  "slug": "mfi-controller",
+  "description": "Ubiquiti mFi Controller",
+  "url": "https://hub.docker.com/r/darco/mfi-controller/",
+  "webui": "https://[HOST]:[PORT:6843]",
+  "startup": "system",
+  "boot": "auto",
+  "ports": {
+    "6843/tcp": 6843,
+    "6080/tcp": 6080,
+    "2323/tcp": 2323,
+    "10001/udp": 10001,
+    "3478/udp": 3478,
+    "1900/udp": 1900,
+   },
+  "map": ["ssl", "share"],
+  "options": {},
+  "schema": {},
+  "image": "darco/mfi-controller"
+}
