@@ -12,6 +12,7 @@
     "6080/tcp": 6080,
     "3478/udp": 3478
    },
+  "legacy": true,
   "map": ["share:rw"],
   "options": {},
   "schema": {},
